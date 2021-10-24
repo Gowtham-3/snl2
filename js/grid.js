@@ -27,8 +27,8 @@ player2 = {x:10, y:1, z:1};
 
 var canMove=true;
 var gameStarted=0;
-const socket = io('http://localhost:3001');
-//const socket = io('https://snake-n-ladder-game.herokuapp.com/');
+//const socket = io('http://localhost:3001');
+const socket = io('https://snake-n-ladder-game.herokuapp.com/');
 socket.on('connected', connect());
 
 socket.on('id',(msg) => {
