@@ -53,7 +53,7 @@ socket.on('joined', () => {
 });
 
 socket.on('err',(msg) => {
-    document.getElementById("data").innerHTML = msg;
+    document.getElementById("data").innerHTML = msg; 
 });
 
 socket.on('gameStarted', () => {
